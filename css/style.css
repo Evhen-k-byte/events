@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap');
-
 * {
    box-sizing: border-box;
 }
@@ -18,6 +17,12 @@ body {
    line-height: 1.5;
 }
 
+@media screen and (max-width: 768px) {
+   body {
+      font-size: 16px;
+   }
+}
+
 .container {
    max-width: 1170px;
    padding: 0 15px;
@@ -31,7 +36,6 @@ body {
 .box {
    padding: 40px 0 90px;
 }
-
 
 .box--padding-lg {
    padding: 90px 0;
@@ -64,6 +68,21 @@ h4 {
 
 h5 {
    font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+   h1, h2 {
+      font-size: 42px;
+   }
+   h3 {
+      font-size: 28px;
+   }
+   h4 {
+      font-size: 24px;
+   }
+   h5 {
+      font-size: 18px;
+   }
 }
 
 header {
@@ -141,7 +160,6 @@ header .container {
    color: #ffffff;
    background-color: #e71cb4;
    border: 2px solid #e71cb4;
-   font-size: 22px;
    font-weight: 700;
    border-radius: 5px;
    padding: 15px 45px;
@@ -152,6 +170,13 @@ header .container {
 .btn--lg {
    font-size: 22px;
    padding: 20px 80px;
+}
+
+@media screen and (max-width: 576px) {
+   .btn--lg {
+      font-size: 16px;
+      padding: 15px 45px;
+   }
 }
 
 .btn:hover, .btn:active, .btn:focus {
@@ -172,7 +197,7 @@ header .container {
    color: #e71cb4;
 }
 
-.text-yellow{
+.text-yellow {
    color: #ffde16;
 }
 
@@ -184,13 +209,20 @@ header .container {
    color: #20c9e0;
 }
 
-.text-green{
+.text-green {
    color: #2eac66;
 }
 
 .text-lg {
    font-size: 32px;
    margin: 90px 0;
+}
+
+@media screen and (max-width: 768px) {
+   .text-lg {
+      font-size: 24px;
+      margin: 50px 0;
+   }
 }
 
 .text-sm {
@@ -208,12 +240,24 @@ header .container {
    font-size: 24px;
    font-weight: 500;
    column-count: 2;
-   column-gap: 30px;  
+   column-gap: 30px;
+}
+
+@media screen and (max-width: 960px) {
+   .course {
+      column-count: 1;
+   }
 }
 
 .course li {
    display: flex;
    padding: 25px 0;
+}
+
+@media screen and (max-width: 576px) {
+   .course li {
+      flex-direction: column;
+   }
 }
 
 .course__index {
@@ -225,7 +269,14 @@ header .container {
    flex: 0 0 auto;
 }
 
-.course__index > i {
+@media screen and (max-width: 576px) {
+   .course__index {
+      font-size: 32px;
+      padding: 0;
+   }
+}
+
+.course__index>i {
    margin-right: 25px;
 }
 
@@ -238,15 +289,34 @@ header .container {
    justify-content: space-between;
 }
 
+@media screen and (max-width: 960px) {
+   .people {
+      justify-content: space-around;
+   }
+}
+
 .person {
    padding: 20px 60px;
    text-align: center;
-   max-width: 33%;
+   width: 33%;
+}
+
+@media screen and (max-width: 960px) {
+   .person {
+      width: 50%;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .person {
+      width: 80%;
+   }
 }
 
 .person--padding-sm {
    padding: 20px;
 }
+
 .person__img {
    border-radius: 10%;
    width: 100%;
@@ -256,7 +326,7 @@ header .container {
    margin: 20px 0;
 }
 
-.person__img--round{
+.person__img--round {
    border-radius: 50%;
 }
 
@@ -268,7 +338,6 @@ header .container {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   
 }
 
 .person__name {
@@ -287,6 +356,7 @@ header .container {
    justify-content: center;
    flex-wrap: wrap;
 }
+
 .countdown__item {
    background-color: #470340;
    border: 2px solid #470340;
@@ -299,8 +369,7 @@ header .container {
    transition: all .3s ease-in;
 }
 
-.countdown__item:hover,
-.countdown__item:focus {
+.countdown__item:hover, .countdown__item:focus {
    background-color: transparent;
    border-color: #fff;
    cursor: pointer;
@@ -310,11 +379,41 @@ header .container {
    font-size: 70px;
    font-weight: 700;
    line-height: 1.2;
-
 }
+
 .coundown__text {
    text-transform: uppercase;
    font-weight: 300;
+}
+
+@media screen and (max-width: 960px) {
+   .countdown__item {
+      min-width: 120px;
+      min-height: 120px;
+      padding: 10px 20px 10px;
+      margin: 0 20px;
+   }
+   .countdown__num {
+      font-size: 50px;
+   }
+   .coundown__text {
+      font-size: 14px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .countdown__item {
+      min-width: 160px;
+      min-height: 160px;
+      padding: 15px 30px 20px 30px;
+      margin: 15px 35px;
+   }
+   .countdown__num {
+      font-size: 70px;
+   }
+   .coundown__text {
+      font-size: 18px;
+   }
 }
 
 .sposors {
@@ -340,6 +439,7 @@ header .container {
    margin: 30px 0 0;
    text-align: center;
 }
+
 .social {
    display: inline-block;
 }
@@ -353,11 +453,10 @@ header .container {
    border-radius: 50%;
 }
 
-.social a:hover,
-.social a:focus,
-.social a:active {
+.social a:hover, .social a:focus, .social a:active {
    background-color: #e71cb4;
 }
+
 .social i {
    margin: auto;
 }
