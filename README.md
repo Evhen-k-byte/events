@@ -10,7 +10,7 @@ HTML5,
 CSS,
 Font Awesome.
 ---
-### Team: anna gorbenko
+### Team: [Hanna Horbenko](https://github.com/HannaHorbenko)
 ---
 ### Contact:
 <a href="mailto:yevhen.kurian@gmail.com">Ask questions by email</a>
