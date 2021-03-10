@@ -8,9 +8,9 @@ My first example of a landing page, with a well-thought-out structure and stylis
 ---
 HTML5,
 CSS,
-Pure js,
-Font Awesome,
-Gulp and plugins.
+Font Awesome.
+---
+### Team: anna gorbenko
 ---
 ### Contact:
 <a href="mailto:yevhen.kurian@gmail.com">Ask questions by email</a>
@@ -24,10 +24,8 @@ Gulp and plugins.
 ## Использованые технологии:
 ---
 HTML5,
-SaaS,
-Pure js,
-Font Awesome,
-Gulp and plugins.
+CSS,
+Font Awesome.
 ### Контакты:
 <a href="mailto:yevhen.kurian@gmail.com">Задавайте вопросы по электронной почте</a>
 ---
