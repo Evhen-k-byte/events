@@ -27,7 +27,7 @@ HTML5,
 CSS,
 Font Awesome.
 ---
-Команда: [Hanna Horbenko](https://github.com/HannaHorbenko)
+Команда: [Анна Горбенко](https://github.com/HannaHorbenko)
 ---
 ### Контакты:
 <a href="mailto:yevhen.kurian@gmail.com">Задавайте вопросы по электронной почте</a>
